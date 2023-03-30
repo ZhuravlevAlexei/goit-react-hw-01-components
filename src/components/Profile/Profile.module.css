@@ -1,5 +1,3 @@
-@import-normalize;
-
 .profile_card {
   display: flex;
   flex-direction: column;
