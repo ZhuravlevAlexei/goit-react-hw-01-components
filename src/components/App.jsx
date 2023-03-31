@@ -7,19 +7,21 @@ import data from '../data.json';
 import FriendList from './FriendList/FriendList';
 import friends from '../friends.json';
 
-// console.log(friends);
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from '../transactions.json';
+// console.log(transactions);
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        //height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
-        //3 доби шукав ...
+
         flexDirection: 'column',
       }}
     >
@@ -33,7 +35,8 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
       <FriendList friends={friends} />
-      {/* ;React homework template */}
+      <TransactionHistory items={transactions} />
+      {/* React homework template */}
     </div>
   );
 };
