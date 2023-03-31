@@ -1,7 +1,13 @@
 import Profile from './Profile/Profile';
 import user from '../user.json';
 
-// console.log(user);
+import Statistics from './Statistics/Statistics';
+import data from '../data.json';
+
+import FriendList from './FriendList/FriendList';
+import friends from '../friends.json';
+
+// console.log(friends);
 
 export const App = () => {
   return (
@@ -13,6 +19,8 @@ export const App = () => {
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
+        //3 доби шукав ...
+        flexDirection: 'column',
       }}
     >
       <Profile
@@ -22,7 +30,10 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      {/* React homework template */}
+      <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
+      <FriendList friends={friends} />
+      ;React homework template
     </div>
   );
 };

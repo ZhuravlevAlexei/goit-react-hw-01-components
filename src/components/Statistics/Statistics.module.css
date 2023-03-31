@@ -1,0 +1,46 @@
+.statistics_tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 400px;
+  margin-bottom: 50px;
+
+  background-color: #ebe4e44d;
+}
+
+.tab_title {
+  width: 350px;
+  height: 80px;
+  font-weight: 600;
+  font-size: 25px;
+
+  text-align: center;
+  background-color: white;
+}
+
+.tab_statList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+
+.tab_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.tab_label {
+  font-size: 16px;
+}
+
+.tab_percentage {
+  font-size: 20px;
+}

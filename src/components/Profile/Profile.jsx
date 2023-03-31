@@ -14,19 +14,19 @@ const Profile = props => {
       </div>
 
       <ul className={css.card_stats}>
-        <li className={css.statsItems}>
+        <li key={1} className={css.statsItems}>
           <span className={css.stats_label}>Followers</span>
           <span className={css.stats_quantity}>
             {new Intl.NumberFormat().format(stats.followers)}
           </span>
         </li>
-        <li className={css.statsItems}>
+        <li key={2} className={css.statsItems}>
           <span className={css.stats_label}>Views</span>
           <span className={css.stats_quantity}>
             {new Intl.NumberFormat().format(stats.views)}
           </span>
         </li>
-        <li className={css.statsItems}>
+        <li key={3} className={css.statsItems}>
           <span className={css.stats_label}>Likes</span>
           <span className={css.stats_quantity}>
             {new Intl.NumberFormat().format(stats.likes)}
