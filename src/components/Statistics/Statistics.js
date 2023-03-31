@@ -6,8 +6,7 @@ const Statistics = props => {
   return (
     <section className={css.statistics_tab}>
       <div className={css.title_thumb}>
-        {/* <h2 className={css.tab_title}>{title ? title.toUpperCase() : ''}</h2> */}
-        <h2 className={css.tab_title}>{title && title.toUpperCase()}</h2>
+        {title && <h2 className={css.tab_title}>{title.toUpperCase()}</h2>}
       </div>
       <ul className={css.tab_statList}>
         {stats.map(({ id, label, percentage }) => {
