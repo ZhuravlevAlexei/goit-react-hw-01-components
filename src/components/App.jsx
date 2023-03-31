@@ -9,7 +9,6 @@ import friends from '../friends.json';
 
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 import transactions from '../transactions.json';
-// console.log(transactions);
 
 export const App = () => {
   return (

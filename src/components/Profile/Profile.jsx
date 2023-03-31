@@ -3,7 +3,6 @@ import css from './Profile.module.css';
 
 const Profile = props => {
   const { username, tag, location, avatar, stats } = props;
-  //   console.log(stats);
   return (
     <div className={css.profile_card}>
       <div className={css.card_description}>

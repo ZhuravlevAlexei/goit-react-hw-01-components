@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 import css from './TransactionHistory.module.css';
 
-function getBkg(idx) {
-  //   console.log(idx);
-  return (idx + 1) % 2 === 0 ? `lightgray` : `white`;
+function getClass(idx) {
+  return (idx + 1) % 2 === 0 ? css.tdark_pattern : css.tlight_pattern;
 }
 
 const TransactionHistory = props => {
@@ -21,24 +20,11 @@ const TransactionHistory = props => {
         {items.map(({ id, type, amount, currency }, idx) => {
           return (
             <tr key={id}>
-              <td
-                className={css.t_pattern}
-                style={{ backgroundColor: getBkg(idx) }}
-              >
+              <td className={getClass(idx)}>
                 {type[0].toUpperCase() + type.slice(1)}
               </td>
-              <td
-                className={css.t_pattern}
-                style={{ backgroundColor: getBkg(idx) }}
-              >
-                {amount}
-              </td>
-              <td
-                className={css.t_pattern}
-                style={{ backgroundColor: getBkg(idx) }}
-              >
-                {currency}
-              </td>
+              <td className={getClass(idx)}>{amount}</td>
+              <td className={getClass(idx)}>{currency}</td>
             </tr>
           );
         })}
