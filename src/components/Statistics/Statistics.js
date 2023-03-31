@@ -9,8 +9,9 @@ const Statistics = props => {
   const { title, stats } = props;
   return (
     <section className={css.statistics_tab}>
-      <h2 className={css.tab_title}>{title ? title.toUpperCase() : '   '}</h2>
-
+      <div className={css.title_thumb}>
+        <h2 className={css.tab_title}>{title ? title.toUpperCase() : '   '}</h2>
+      </div>
       <ul className={css.tab_statList}>
         {stats.map(({ id, label, percentage }) => {
           return (

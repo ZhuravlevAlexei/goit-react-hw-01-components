@@ -11,12 +11,18 @@
 }
 
 .tab_title {
-  width: 350px;
-  height: 80px;
   font-weight: 600;
   font-size: 25px;
 
   text-align: center;
+}
+
+.title_thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 80px;
   background-color: white;
 }
 

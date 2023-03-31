@@ -1,0 +1,14 @@
+.friends_list {
+  list-style: none;
+  margin-bottom: 40px;
+  /* background-color: aqua; */
+}
+
+.friends_item {
+  width: 300px;
+  margin-bottom: 10px;
+
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 5px lightgray;
+}
